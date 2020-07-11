@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)http://www.surg.sc.cn/qygk/qyjj/index.shtml -->
+<!-- saved from url=(0048)http://www.surg.sc.cn/qygk/zzry/ryjx/84738.shtml -->
 <html>
 
 <head>
@@ -23,17 +23,48 @@
     <script src="../js/swiper.min.js"></script>
     <script>
         $(function () {
-            var id = "2122";
+            var id = "2130";
             $("#" + id).addClass("cur");
             $('.left_nav>ul>li').each(function () {
                 if ($(this).find('li').hasClass('cur')) {
                     $('>a', $(this)).addClass("cur")
                     $(this).find('ul').css('display', 'block');
                 }
-            })/**/
+            }) /**/
         });
     </script>
-    <title>城乡投资建设集团有限公司</title>
+    <script>
+        $(function () {
+            $.ajax({
+                url: '/webapp/analysis/calculator',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    objId: '84738',
+                    objName: 'DOC-84738',
+                    chanId: 2130
+                },
+                dataType: 'json',
+                success: function () {
+                    $.ajax({
+                        url: '/webapp/analysis/queryCount',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            objId: '84738',
+                            objName: 'DOC-84738',
+                            type: 'pv'
+                        },
+                        success: function (data) {
+                            var html = data.count;
+                            //$("#number").html(html);
+                        },
+                    });
+                },
+            });
+        });
+    </script>
+    <title>四川铁投城乡投资建设集团有限责任公司</title>
 </head>
 
 <body style="">
@@ -52,7 +83,7 @@
 
             <!--mobile nav/start-->
             <div class="menu fr"><span></span><span></span><span></span></div>
-            <div class="rSlide" style="height: 1440px;">
+            <div class="rSlide" style="height: 1050px;">
                 <ul class="clearfix text-center">
                     <li><a href="http://www.surg.sc.cn/index.shtml">首页</a></li>
                     <li><a href="http://www.surg.sc.cn/qygk/index.shtml" title="企业概况">企业概况</a>
@@ -138,8 +169,8 @@
         <div class="w1400 mgOauto clearfix">
             <ul class="clearfix">
                 <li id="nav_1"><a href="http://www.surg.sc.cn/index.shtml">首页</a></li>
-                <li class=""><a href="http://www.surg.sc.cn/qygk/index.shtml" title="企业概况">企业概况</a>
-                    <div class="subMenuBox" style="display: none; width: 720px;">
+                <li><a href="http://www.surg.sc.cn/qygk/index.shtml" title="企业概况">企业概况</a>
+                    <div class="subMenuBox">
                         <dl class="clearfix">
                             <dd><a href="http://www.surg.sc.cn/qygk/qyjj/index.shtml" title="企业简介">企业简介</a></dd>
                             <dd><a href="http://www.surg.sc.cn/qygk/ldzc/index.shtml" title="领导致辞">领导致辞</a></dd>
@@ -152,8 +183,8 @@
                         </dl>
                     </div>
                 </li>
-                <li class=""><a href="http://www.surg.sc.cn/xwzx/index.shtml" title="新闻中心">新闻中心</a>
-                    <div class="subMenuBox" style="display: none; width: 360px;">
+                <li><a href="http://www.surg.sc.cn/xwzx/index.shtml" title="新闻中心">新闻中心</a>
+                    <div class="subMenuBox">
                         <dl class="clearfix">
                             <dd><a href="http://www.surg.sc.cn/xwzx/ldzl/index.shtml" title="领导专栏">领导专栏</a></dd>
                             <dd><a href="http://www.surg.sc.cn/xwzx/jtyw/index.shtml" title="集团要闻">集团要闻</a></dd>
@@ -162,8 +193,8 @@
                         </dl>
                     </div>
                 </li>
-                <li class=""><a href="http://www.surg.sc.cn/ywly/index.shtml" title="业务领域">业务领域</a>
-                    <div class="subMenuBox" style="display: none; width: 270px;">
+                <li><a href="http://www.surg.sc.cn/ywly/index.shtml" title="业务领域">业务领域</a>
+                    <div class="subMenuBox">
                         <dl class="clearfix">
                             <dd><a href="http://www.surg.sc.cn/ywly/ywfb/index.shtml" title="业务分布">业务分布</a></dd>
                             <dd><a href="http://www.surg.sc.cn/ywly/xmzs/index.shtml" title="业务板块">业务板块</a></dd>
@@ -250,7 +281,7 @@
                     <p>ABOUT US</p>
                 </div>
                 <ul class="clearfix">
-                    <li id="2122" class="cur">
+                    <li id="2122">
                         <a href="http://www.surg.sc.cn/qygk/qyjj/index.shtml">
                             企业简介</a>
                         <!-- 判断当前循环的栏目有没有子栏目 -->
@@ -265,63 +296,134 @@
                             管理团队</a>
                         <!-- 判断当前循环的栏目有没有子栏目 -->
                     </li>
-                    <li id="2126">
-                        <a href="http://www.surg.sc.cn/qygk/zzjg/index.shtml">
-                            组织机构</a>
+                    <li id="2125" class="addIcon">
+                        <a>
+                            企业架构</a>
                         <!-- 判断当前循环的栏目有没有子栏目 -->
+                        <ul>
+                            <li id="2126">
+                                <a href="http://www.surg.sc.cn/qygk/qyjg/zzjg/index.shtml" title="组织机构">组织机构</a></li>
+                            <li id="2127">
+                                <a href="http://www.surg.sc.cn/qygk/qyjg/xsqy/index.shtml" title="下属企业">下属企业</a></li>
+                        </ul>
                     </li>
-                    <li id="2127">
-                        <a href="http://www.surg.sc.cn/qygk/xsqy/index.shtml">
-                            下属企业</a>
+                    <li id="2128" class="addIcon">
+                        <a class="cur">
+                            资质荣誉</a>
                         <!-- 判断当前循环的栏目有没有子栏目 -->
+                        <ul style="display: block;">
+                            <li id="2130" class="cur">
+                                <a href="http://www.surg.sc.cn/qygk/zzry/ryjx/index.shtml" title="荣誉奖项">荣誉奖项</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li id="2130">
-                        <a href="http://www.surg.sc.cn/qygk/ryjx/index.shtml">
-                            荣誉奖项</a>
+                    <li id="2131" class="addIcon">
+                        <a>
+                            企业文化</a>
                         <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2132">
-                        <a href="http://www.surg.sc.cn/qygk/whtx/index.shtml">
-                            文化体系</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2133">
-                        <a href="http://www.surg.sc.cn/qygk/shzr/index.shtml">
-                            社会责任</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
+                        <ul>
+                            <li id="2132">
+                                <a href="http://www.surg.sc.cn/qygk/qywh/whtx/index.shtml" title="文化体系">文化体系</a></li>
+                            <li id="2133">
+                                <a href="http://www.surg.sc.cn/qygk/qywh/shzr/index.shtml" title="社会责任">社会责任</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="right_cont fr">
                 <div class="cont_title clearfix">
-                    <h2 class="fl">企业简介<em>
-                            OUR GROUPS</em></h2>
+                    <h2 class="fl">荣誉奖项<em>
+                        </em></h2>
                     <p class="fr">当前位置： <a href="http://www.surg.sc.cn/index.shtml">首页</a> &gt;
-                        <a href="http://www.surg.sc.cn/qygk/index.shtml">企业概况</a></p>
+                        <a href="http://www.surg.sc.cn/qygk/index.shtml">企业概况</a> &gt; <a
+                            href="http://www.surg.sc.cn/qygk/zzry/index.shtml">资质荣誉</a> </p>
                 </div>
                 <div class="cont_box">
                     <div class="news-view">
+                        <h1>城乡集团党委荣获此称号</h1>
+                        <p class="subtitle"></p>
+                        <p class="news-info">
+                            发布时间： 2020-05-20</p>
                         <div class="content">
-                            <p style="line-height: 32pt; text-indent: 32pt;"><img src="../images/gsdl.jpg"
-                                    style="float: right; margin-left: 20px; margin-right: 20px;"><span
-                                    style="font-family: microsoft yahei;"><span
-                                        style="font-size: 16px;">四川铁投城乡投资建设集团有限责任公司是四川省国资委批准成立的国有独资公司，成立于2014年6月，注册资本金20亿元，系四川铁投集团旗下核心子公司之一。公司主营业务涵盖新型城镇化和乡村振兴相关产业，涉及城市综合基础设施、房地产开发、工程施工、集采贸易、现代服务业等。<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        目前，公司有职工1100余人，下属企业30余家，在成都及其周边、川南片区、川东片区、攀西片区等城市和地区深入开展各类业务，项目总投资超600亿元，土地储备超4000亩。公司大力深耕省内市场、努力开拓省外市场、积极融入“一带一路”市场，着力打响“铁投城乡”“铁投地产”“铁投物业”品牌，不断提升企业影响力。<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        未来，公司将按照中央“五位一体”总体布局、“四个全面”战略布局，省委、省政府“一干多支、五区协同”“四向拓展、全域开放”战略谋划，立足四川铁投集团相关产业布局，持续提升高质量发展能力，努力打造一流产品、一流服务、一流管理、一流团队、一流文化，</span></span><span
-                                    style="font-size: 16px;">力争在十四五期间实现主营业务收入超100亿元、资产总额超500亿元的发展目标</span><span
-                                    style="font-family: microsoft yahei;"><span
-                                        style="font-size: 16px;">，为推动治蜀兴川再上新台阶作出新的更大贡献！</span></span></p>
+                            <p><img src="../images/2020052016362193165416.JPG"></p>
                         </div>
+                        <div class="pics">
+                            <div class="list">
+                                <ul>
+                                </ul>
+                            </div>
+                            <a class="prev" href="javascript:void(0)" title="上一张"></a>
+                            <a class="next" href="javascript:void(0)" title="下一张"></a>
+                            <s class="prev-btn" style="display: none;"></s>
+                            <s class="next-btn" style="display: none;"></s>
+                            <p>PHOTO(<span>1</span>/<b>0</b>)</p>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('.pics .list li:first').fadeIn(200);
+                                var liNum = $('.pics .list ul li').length;
+                                $(".pics  b").html(liNum)
+                                $('.pics .prev').click(function () {
+                                    $('.pics .list li').hide();
+                                    if ($('.pics span').html() > 1) {
+                                        $('.pics span').html(parseInt($('.pics span').html()) - 1);
+                                    } else {
+                                        $('.pics span').html(liNum);
+                                    }
+                                    var n = parseInt($('.pics span').html());
+                                    $('.pics .list li:eq(' + (n - 1).toString() + ')').show();
+                                });
+                                $('.pics .next').click(function () {
+                                    /* $('.pics .list li').hide();
+                                        if($('.pics span').html()<liNum){
+                                            $('.pics span').html(parseInt($('.pics span').html())+1);
+                                        }else{
+                                            $('.pics span').html("1");
+                                        }
+                                       var n=parseInt($('.pics span').html());
+                                       $('.pics .list li:eq('+(n-1).toString()+')').show();*/
+                                    autoNext()
+                                });
+                                $('.pics .prev').hover(function () {
+                                        $('.pics .prev-btn').fadeIn("fast");
+                                    },
+                                    function () {
+                                        $('.pics .prev-btn').fadeOut("fast");
+                                    });
+                                $('.pics .next').hover(function () {
+                                        $('.pics .next-btn').fadeIn("fast");
+                                    },
+                                    function () {
+                                        $('.pics .next-btn').fadeOut("fast");
+                                    });
+                                //添加自动播放
+                                var speed = 5000;
+
+                                function autoNext() {
+                                    $('.pics .list li').hide();
+                                    if ($('.pics span').html() < liNum) {
+                                        $('.pics span').html(parseInt($('.pics span').html()) + 1);
+                                    } else {
+                                        $('.pics span').html("1");
+                                    }
+                                    var n = parseInt($('.pics span').html());
+                                    $('.pics .list li:eq(' + (n - 1).toString() + ')').show();
+                                }
+                                var t = setInterval(autoNext, speed);
+                                $(".pics").hover(function () {
+                                    clearInterval(t)
+                                }, function () {
+                                    t = setInterval(autoNext, speed);
+                                })
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--相关链接 -->
-    <!--footer -->
+    <!--footer-->
     <!--相关链接 -->
     <div class="links w100 mgt20">
         <div class="w1400 clearfix mgOauto">
@@ -329,11 +431,11 @@
                 相关链接 <em>LINKS</em></span>
             <div class="fl links_cont">
                 <ul class=" clearfix">
-                    <li><a href="http://www.sc.gov.cn/" target="_blank" title="陕西省人民政府">陕西省人民政府</a></li>
-                    <li><a href="http://fgw.sc.gov.cn/sfgw/index.shtml" target="_blank" title="陕西省发改委">陕西省发改委</a></li>
-                    <li><a href="http://jst.sc.gov.cn/" target="_blank" title="陕西省住建厅">陕西省住建厅</a></li>
-                    <li><a href="http://gzw.sc.gov.cn/" target="_blank" title="陕西省国资委">陕西省国资委</a></li>
-                    <li><a href="https://www.srig.com.cn/" target="_blank" title="陕西投资集团">陕西投资集团</a></li>
+                    <li><a href="http://www.sc.gov.cn/" target="_blank" title="四川省人民政府">四川省人民政府</a></li>
+                    <li><a href="http://fgw.sc.gov.cn/sfgw/index.shtml" target="_blank" title="四川省发改委">四川省发改委</a></li>
+                    <li><a href="http://jst.sc.gov.cn/" target="_blank" title="四川省住建厅">四川省住建厅</a></li>
+                    <li><a href="http://gzw.sc.gov.cn/" target="_blank" title="四川省国资委">四川省国资委</a></li>
+                    <li><a href="https://www.srig.com.cn/" target="_blank" title="四川铁投集团">四川铁投集团</a></li>
                 </ul>
             </div>
             <!--
@@ -352,18 +454,14 @@
         <div class="w1400 clearfix mgOauto">
             <dl class="about">
                 <dt>联系我们</dt>
-                <dd>地址：陕西省西安市未央区</dd>
-                <dd>邮编：710021</dd>
-                <dd>网址：www.baidu.com</dd>
-                <dd>©2014 陕西省西安市未央区
+                <dd>地址：四川省成都市高新区九兴大道14号</dd>
+                <dd>邮编：610041</dd>
+                <dd>网址：www.surg.sc.cn</dd>
+                <dd>©2014 四川铁投城乡投资建设集团有限责任公司
                     <a href="http://www.beian.miit.gov.cn/" target="_blank" style="color: #b0b9d6;">
-                        ICP备123456
-                    </a>
-                    <span>网站访问统计
-                        <span id="number">12306</span>
-                        <img src="../images/tj.png">
-                    </span>
-                </dd>
+                        蜀ICP备14028460号-1</a>
+                    <span>网站访问统计<span id="number">1097198</span>
+                        <img src="../images/tj.png"></span> </dd>
             </dl>
             <div class="weixin">
                 <span><img src="../images/weixin.jpg"></span>
@@ -371,20 +469,28 @@
             </div>
         </div>
     </div>
-    <!-- <script>
+    <script>
         $(function () {
             $.ajax({
                 url: '/webapp/analysis/doccalculator',
                 type: 'POST',
                 dataType: 'json',
-                data: { objId: 1, objName: 'DOC-SITE16', chanId: 1 },
+                data: {
+                    objId: 1,
+                    objName: 'DOC-SITE16',
+                    chanId: 1
+                },
                 dataType: 'json',
                 success: function () {
                     $.ajax({
                         url: '/webapp/analysis/queryCount',
                         type: 'POST',
                         dataType: 'json',
-                        data: { objId: 1, objName: 'DOC-SITE16', type: 'pv' },
+                        data: {
+                            objId: 1,
+                            objName: 'DOC-SITE16',
+                            type: 'pv'
+                        },
                         success: function (data) {
                             var html = data.count - 2000000;
                             $("#number").html(html);
@@ -393,7 +499,7 @@
                 },
             });
         });
-    </script> -->
+    </script>
     <script type="text/javascript">
         function refocus() {
             var getquery = document.getElementById("query");
@@ -402,6 +508,7 @@
             getquery.focus();
 
         }
+
         function reblur() {
             var getquery = document.getElementById("query");
             if (getquery.value == "") {
@@ -422,9 +529,9 @@
                 document.getElementById("query").value = "";
                 alert("关键字不能为空！");
                 return false;
-            }
-            else {
-                window.open("https://www.srig.com.cn/fzlm/znjs/index.shtml?query=" + encodeURIComponent(fixvalue) + "&siteId=16");
+            } else {
+                window.open("https://www.srig.com.cn/fzlm/znjs/index.shtml?query=" + encodeURIComponent(fixvalue) +
+                    "&siteId=16");
             }
             //必需，最后将文本转换为gb2312
             //document.charset="gb2312";
@@ -441,9 +548,9 @@
                     document.getElementById("query").value = "";
                     alert("关键字不能为空！");
                     return false;
-                }
-                else {
-                    window.location.href = "https://www.srig.com.cn/fzlm/znjs/index.shtml?query=" + encodeURIComponent(fixvalue) + "&siteId=16";
+                } else {
+                    window.location.href = "https://www.srig.com.cn/fzlm/znjs/index.shtml?query=" +
+                        encodeURIComponent(fixvalue) + "&siteId=16";
                 }
 
                 return true;
