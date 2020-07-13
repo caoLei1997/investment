@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)http://www.surg.sc.cn/djzc/djzt/lxyz/index.shtml -->
+<!-- saved from url=(0045)http://www.surg.sc.cn/ztzl/kjxgyq/84541.shtml -->
 <html>
 
 <head>
@@ -23,7 +23,7 @@
     <script src="../js/swiper.min.js"></script>
     <script>
         $(function () {
-            var id = "2281";
+            var id = "2174";
             $("#" + id).addClass("cur");
             $('.left_nav>ul>li').each(function () {
                 if ($(this).find('li').hasClass('cur')) {
@@ -33,7 +33,38 @@
             }) /**/
         });
     </script>
-    <title> 城乡投资建设集团有限责任公司 </title>
+    <script>
+        $(function () {
+            $.ajax({
+                url: '/webapp/analysis/calculator',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    objId: '84541',
+                    objName: 'DOC-84541',
+                    chanId: 2174
+                },
+                dataType: 'json',
+                success: function () {
+                    $.ajax({
+                        url: '/webapp/analysis/queryCount',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            objId: '84541',
+                            objName: 'DOC-84541',
+                            type: 'pv'
+                        },
+                        success: function (data) {
+                            var html = data.count;
+                            //$("#number").html(html);
+                        },
+                    });
+                },
+            });
+        });
+    </script>
+    <title>城乡投资建设集团有限责任公司</title>
 </head>
 
 <body>
@@ -178,7 +209,8 @@
                         </dl>
                     </div>
                 </li>
-                <li class=""><a href="./djzc.html" title="党建之窗">党建之窗</a>
+                <li class="">
+                    <a href="./djzc.html" title="党建之窗">党建之窗</a>
                     <div class="subMenuBox" style="display: none; width: 424px;">
                         <dl class="clearfix">
                             <dd><a href="./djdt.html" title="集团党建动态">集团党建动态</a></dd>
@@ -198,79 +230,128 @@
     </div>
     <!--------导航end--------->
 
-
     <div class="page_banner w100">
         <div class="w1400 mgOauto">
-            <h2 class="white">党建之窗
-                <span>PARTY BUILDING</span></h2>
+            <h2 class="white">专题专栏
+                <span></span></h2>
         </div>
     </div>
     <div class="crumb w100">
         <div class="w1400 mgOauto">
             <div class="crumb_box">
                 <p><a href="../index.html">首页</a> &gt;
-                    党建之窗</p>
+                    专题专栏</p>
             </div>
         </div>
     </div>
-
-
     <div class="w1400 mgOauto ">
         <div class="clearfix mgt20">
             <div class="left_nav fl">
                 <div class="left_nav_title">
-                    <h3>党建之窗</h3>
-                    <p>PARTY BUILDING</p>
+                    <h3>专题专栏</h3>
+                    <p></p>
                 </div>
                 <ul class="clearfix">
-                    <li id="2145">
-                        <a href="./djdt.html">
-                            集团党建动态</a>
+                    <li id="2174" class="cur">
+                        <a href="./ztzl.html">
+                            抗击新冠疫情</a>
                         <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2146">
-                        <a href="./jcdjdt.html">
-                            基层党建动态</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2147">
-                        <a href="./dnzd.html">
-                            党内制度</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2148" class="addIcon">
-                        <a class="cur">
-                            党建专题</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                        <ul style="display: block;">
-                            <li id="2281" class="cur">
-                                <a href="./lxyz.html" title="两学一做">两学一做</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="right_cont fr">
                 <div class="cont_title clearfix">
-                    <h2 class="fl">两学一做<em>
+                    <h2 class="fl">抗击新冠疫情<em>
                         </em></h2>
                     <p class="fr">当前位置： <a href="../index.html">首页</a> &gt;
-                        <a href="./djzc.html">党建之窗</a> &gt; <a href="./lxyz.html">党建专题</a> </p>
+                        <a href="./ztzl.html">专题专栏</a> </p>
                 </div>
-                <div class="listbox">
-                    <ul class="clearfix">
-                        <li class="clearfix">
-                            <a href="" class="fl">
-                                关于印发《城乡集团党委“两学一做”学习教育工作方案》的通知</a>
-                            <span>2020-04-16</span>
-                        </li>
-                    </ul>
-                </div>
+                <div class="cont_box">
+                    <div class="news-view">
+                        <h1>城乡集团全面吹响复工复产“集结号”</h1>
+                        <p class="subtitle"></p>
+                        <p class="news-info">
+                            发布时间： 2020-04-10</p>
+                        <div class="content">
+                            <p><span style="font-family: microsoft yahei"><span
+                                        style="font-size: 16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        抓疫情防控就要抓企业复工复产，抓企业复工复产就是促疫情防控。近日，城乡集团一批批企业陆续复工，一个个项目加快开工建设，集团上下在做好疫情防控工作的前提下，全面吹响了企业复工复产的“集结号”，确保2020年高质量发展实现良好开局。具体复工复产情况如下（排名不分先后，截止2020年3月16日）：</span></span>
+                            </p>
 
-                <div id="pages">
-                    <a href="javascript:void(0);" class="prev">&lt;</a>
-                    <a href="javascript:void(0);" class="active">1</a>
-                    <a href="javascript:void(0);" class="next">&gt;</a>
+                            <p style="text-align: center"><br>
+                                <img src="../images/2020051413234726330857.jpg"></p>
+                        </div>
+                        <div class="pics">
+                            <div class="list">
+                                <ul>
+                                </ul>
+                            </div>
+                            <a class="prev" href="javascript:void(0)" title="上一张"></a>
+                            <a class="next" href="javascript:void(0)" title="下一张"></a>
+                            <s class="prev-btn" style="display: none;"></s>
+                            <s class="next-btn" style="display: none;"></s>
+                            <p>PHOTO(<span>1</span>/<b>0</b>)</p>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('.pics .list li:first').fadeIn(200);
+                                var liNum = $('.pics .list ul li').length;
+                                $(".pics  b").html(liNum)
+                                $('.pics .prev').click(function () {
+                                    $('.pics .list li').hide();
+                                    if ($('.pics span').html() > 1) {
+                                        $('.pics span').html(parseInt($('.pics span').html()) - 1);
+                                    } else {
+                                        $('.pics span').html(liNum);
+                                    }
+                                    var n = parseInt($('.pics span').html());
+                                    $('.pics .list li:eq(' + (n - 1).toString() + ')').show();
+                                });
+                                $('.pics .next').click(function () {
+                                    /* $('.pics .list li').hide();
+                                        if($('.pics span').html()<liNum){
+                                            $('.pics span').html(parseInt($('.pics span').html())+1);
+                                        }else{
+                                            $('.pics span').html("1");
+                                        }
+                                       var n=parseInt($('.pics span').html());
+                                       $('.pics .list li:eq('+(n-1).toString()+')').show();*/
+                                    autoNext()
+                                });
+                                $('.pics .prev').hover(function () {
+                                        $('.pics .prev-btn').fadeIn("fast");
+                                    },
+                                    function () {
+                                        $('.pics .prev-btn').fadeOut("fast");
+                                    });
+                                $('.pics .next').hover(function () {
+                                        $('.pics .next-btn').fadeIn("fast");
+                                    },
+                                    function () {
+                                        $('.pics .next-btn').fadeOut("fast");
+                                    });
+                                //添加自动播放
+                                var speed = 5000;
+
+                                function autoNext() {
+                                    $('.pics .list li').hide();
+                                    if ($('.pics span').html() < liNum) {
+                                        $('.pics span').html(parseInt($('.pics span').html()) + 1);
+                                    } else {
+                                        $('.pics span').html("1");
+                                    }
+                                    var n = parseInt($('.pics span').html());
+                                    $('.pics .list li:eq(' + (n - 1).toString() + ')').show();
+                                }
+                                var t = setInterval(autoNext, speed);
+                                $(".pics").hover(function () {
+                                    clearInterval(t)
+                                }, function () {
+                                    t = setInterval(autoNext, speed);
+                                })
+                            });
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -326,8 +407,6 @@
             </div>
         </div>
     </div>
-
-
     <script>
         $(function () {
             $.ajax({

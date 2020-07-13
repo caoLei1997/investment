@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)http://www.surg.sc.cn/djzc/djzt/lxyz/index.shtml -->
+<!-- saved from url=(0040)http://www.surg.sc.cn/qygygg/73783.shtml -->
 <html>
 
 <head>
@@ -23,7 +23,7 @@
     <script src="../js/swiper.min.js"></script>
     <script>
         $(function () {
-            var id = "2281";
+            var id = "2270";
             $("#" + id).addClass("cur");
             $('.left_nav>ul>li').each(function () {
                 if ($(this).find('li').hasClass('cur')) {
@@ -33,10 +33,43 @@
             }) /**/
         });
     </script>
-    <title> 城乡投资建设集团有限责任公司 </title>
+    <script>
+        $(function () {
+            $.ajax({
+                url: '/webapp/analysis/calculator',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    objId: '73783',
+                    objName: 'DOC-73783',
+                    chanId: 2270
+                },
+                dataType: 'json',
+                success: function () {
+                    $.ajax({
+                        url: '/webapp/analysis/queryCount',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            objId: '73783',
+                            objName: 'DOC-73783',
+                            type: 'pv'
+                        },
+                        success: function (data) {
+                            var html = data.count;
+                            //$("#number").html(html);
+                        },
+                    });
+                },
+            });
+        });
+    </script>
+    <title>城乡投资建设集团有限责任公司</title>
 </head>
 
-<body>
+<body topmargin="0" oncontextmenu="return false" ondragstart="return false" onselectstart="return false"
+    onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false"
+    onmouseup="document.selection.empty()" style="">
     <!--top-->
     <!--头部开始 -->
     <div class="top w100">
@@ -198,79 +231,122 @@
     </div>
     <!--------导航end--------->
 
-
     <div class="page_banner w100">
         <div class="w1400 mgOauto">
-            <h2 class="white">党建之窗
-                <span>PARTY BUILDING</span></h2>
+            <h2 class="white">企业概况
+                <span>ABOUT US</span></h2>
         </div>
     </div>
     <div class="crumb w100">
         <div class="w1400 mgOauto">
             <div class="crumb_box">
                 <p><a href="../index.html">首页</a> &gt;
-                    党建之窗</p>
+                    企业概况</p>
             </div>
         </div>
     </div>
 
 
+
     <div class="w1400 mgOauto ">
         <div class="clearfix mgt20">
-            <div class="left_nav fl">
-                <div class="left_nav_title">
-                    <h3>党建之窗</h3>
-                    <p>PARTY BUILDING</p>
-                </div>
-                <ul class="clearfix">
-                    <li id="2145">
-                        <a href="./djdt.html">
-                            集团党建动态</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2146">
-                        <a href="./jcdjdt.html">
-                            基层党建动态</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2147">
-                        <a href="./dnzd.html">
-                            党内制度</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                    </li>
-                    <li id="2148" class="addIcon">
-                        <a class="cur">
-                            党建专题</a>
-                        <!-- 判断当前循环的栏目有没有子栏目 -->
-                        <ul style="display: block;">
-                            <li id="2281" class="cur">
-                                <a href="./lxyz.html" title="两学一做">两学一做</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="right_cont fr">
+            <div>
                 <div class="cont_title clearfix">
-                    <h2 class="fl">两学一做<em>
+                    <h2 class="fl">企业公益广告<em>
                         </em></h2>
-                    <p class="fr">当前位置： <a href="../index.html">首页</a> &gt;
-                        <a href="./djzc.html">党建之窗</a> &gt; <a href="./lxyz.html">党建专题</a> </p>
+                    <p class="fr">当前位置： <a href="http://www.surg.sc.cn/index.shtml">首页</a> &gt;
+                    </p>
                 </div>
-                <div class="listbox">
-                    <ul class="clearfix">
-                        <li class="clearfix">
-                            <a href="" class="fl">
-                                关于印发《城乡集团党委“两学一做”学习教育工作方案》的通知</a>
-                            <span>2020-04-16</span>
-                        </li>
-                    </ul>
-                </div>
+                <div class="cont_box">
+                    <div class="news-view">
+                        <h1>城乡集团企业公益广告</h1>
+                        <p class="subtitle"></p>
+                        <p class="news-info">
+                            发布时间： 2020-04-01</p>
+                        <div class="content">
+                            <div style="text-align: center">
+                                <p>
+                                    <video class="video-js vjs-default-skin" controls="controls"
+                                        controlslist="nodownload" data-setup="{}" height="450" preload="auto"
+                                        width="650">
+                                        <source src="/uploadfiles/202005/15/2020051515465930046056.mp4"
+                                            type="video/mp4"></video>
+                                </p>
 
-                <div id="pages">
-                    <a href="javascript:void(0);" class="prev">&lt;</a>
-                    <a href="javascript:void(0);" class="active">1</a>
-                    <a href="javascript:void(0);" class="next">&gt;</a>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="pics">
+                            <div class="list">
+                                <ul>
+                                </ul>
+                            </div>
+                            <a class="prev" href="javascript:void(0)" title="上一张"></a>
+                            <a class="next" href="javascript:void(0)" title="下一张"></a>
+                            <s class="prev-btn" style="display: none;"></s>
+                            <s class="next-btn" style="display: none;"></s>
+                            <p>PHOTO(<span>1</span>/<b>0</b>)</p>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('.pics .list li:first').fadeIn(200);
+                                var liNum = $('.pics .list ul li').length;
+                                $(".pics  b").html(liNum)
+                                $('.pics .prev').click(function () {
+                                    $('.pics .list li').hide();
+                                    if ($('.pics span').html() > 1) {
+                                        $('.pics span').html(parseInt($('.pics span').html()) - 1);
+                                    } else {
+                                        $('.pics span').html(liNum);
+                                    }
+                                    var n = parseInt($('.pics span').html());
+                                    $('.pics .list li:eq(' + (n - 1).toString() + ')').show();
+                                });
+                                $('.pics .next').click(function () {
+                                    /* $('.pics .list li').hide();
+                                        if($('.pics span').html()<liNum){
+                                            $('.pics span').html(parseInt($('.pics span').html())+1);
+                                        }else{
+                                            $('.pics span').html("1");
+                                        }
+                                       var n=parseInt($('.pics span').html());
+                                       $('.pics .list li:eq('+(n-1).toString()+')').show();*/
+                                    autoNext()
+                                });
+                                $('.pics .prev').hover(function () {
+                                        $('.pics .prev-btn').fadeIn("fast");
+                                    },
+                                    function () {
+                                        $('.pics .prev-btn').fadeOut("fast");
+                                    });
+                                $('.pics .next').hover(function () {
+                                        $('.pics .next-btn').fadeIn("fast");
+                                    },
+                                    function () {
+                                        $('.pics .next-btn').fadeOut("fast");
+                                    });
+                                //添加自动播放
+                                var speed = 5000;
+
+                                function autoNext() {
+                                    $('.pics .list li').hide();
+                                    if ($('.pics span').html() < liNum) {
+                                        $('.pics span').html(parseInt($('.pics span').html()) + 1);
+                                    } else {
+                                        $('.pics span').html("1");
+                                    }
+                                    var n = parseInt($('.pics span').html());
+                                    $('.pics .list li:eq(' + (n - 1).toString() + ')').show();
+                                }
+                                var t = setInterval(autoNext, speed);
+                                $(".pics").hover(function () {
+                                    clearInterval(t)
+                                }, function () {
+                                    t = setInterval(autoNext, speed);
+                                })
+                            });
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
